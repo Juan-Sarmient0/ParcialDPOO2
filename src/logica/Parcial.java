@@ -6,7 +6,7 @@ public class Parcial {
 	public String raices(double a, double b, double c) throws Exception {
 		
 		if (a == 0) {
-			throw new Exception("a tiene que ser diferente de 0");
+			throw new Exception("no es una ecuación de segundo orden si a es 0");
 		}
 		if(Math.pow(b,2)  -4*a*c < 0) {
 			throw new Exception("No tiene solución dentro de los numeros reales");

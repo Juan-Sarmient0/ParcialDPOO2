@@ -31,7 +31,7 @@ public class ParcialTest  {
 				() -> this.parcial.raices(0,10, 0)
 				);
 
-		assertEquals("a tiene que ser diferente de 0", excepcion.getMessage());
+		assertEquals("no es una ecuación de segundo orden si a es 0", excepcion.getMessage());
 	}
 	
 	@Test
