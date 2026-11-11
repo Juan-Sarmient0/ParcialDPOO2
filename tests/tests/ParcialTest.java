@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 
 import logica.Parcial;
 
-public class test {
+public class ParcialTest  {
 	private Parcial parcial;
 	
 	@BeforeEach
@@ -25,7 +25,7 @@ public class test {
 	}
 	
 	@Test
-	public void excepciona0() {
+	public void excepcionAEs0() {
 		Exception excepcion = assertThrows(
 				Exception.class,
 				() -> this.parcial.raices(0,10, 0)
@@ -35,7 +35,7 @@ public class test {
 	}
 	
 	@Test
-	public void excepciona1() {
+	public void excepcionaNoSolucion() {
 		Exception excepcion = assertThrows(
 				Exception.class,
 				() -> this.parcial.raices(1,0, 1)
